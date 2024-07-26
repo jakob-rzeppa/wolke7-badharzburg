@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("/public/fonts/Poppins/Poppins-Regular.ttf");
+  src: url("/fonts/Poppins/Poppins-Regular.ttf");
 }
 
 @font-face {
   font-family: "Playwrite";
-  src: url("/public/fonts/Playwrite_AT/PlaywriteAT-VariableFont_wght.ttf");
+  src: url("/fonts/Playwrite_AT/PlaywriteAT-VariableFont_wght.ttf");
 }
 
 @layer base {

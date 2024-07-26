@@ -1,21 +1,23 @@
 import { Link } from "react-router-dom";
 
-const links = (
-  <>
-    <li>
-      <Link to={""}>Homepage</Link>
-    </li>
-    <li>
-      <Link to={"/gallery"}>Gallery</Link>
-    </li>
-    <li>
-      <Link to={"/booking"}>Booking</Link>
-    </li>
-    <li>
-      <Link to={"/information"}>Information</Link>
-    </li>
-  </>
-);
+const links = [
+  {
+    path: "",
+    name: "homepage",
+  },
+  {
+    path: "/gallery",
+    name: "Gallery",
+  },
+  {
+    path: "/booking",
+    name: "Booking",
+  },
+  {
+    path: "/information",
+    name: "Information",
+  },
+];
 
 function Header() {
   return (
@@ -30,7 +32,11 @@ function Header() {
       </div>
       <div className="flex-none">
         <ul className="flex gap-4">
-          {links}
+          {links.map((link, index) => (
+            <li key={index}>
+              <Link to={link.path}>{link.name}</Link>
+            </li>
+          ))}
           <li>
             <Link
               to={"/booking"}
