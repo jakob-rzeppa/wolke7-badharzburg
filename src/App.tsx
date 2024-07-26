@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
 
 const Homepage = lazy(() => import("./pages/Homepage"));
 const Booking = lazy(() => import("./pages/Booking"));
@@ -33,15 +34,8 @@ const routes = [
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <Suspense fallback={<p>Loading...</p>}>
-              <Homepage></Homepage>
-            </Suspense>
-          }
-        />
         {routes.map((route, index) => (
           <Route
             key={index}
