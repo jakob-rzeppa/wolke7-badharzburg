@@ -21,7 +21,7 @@ const links = [
 
 function Header() {
   return (
-    <header className="sticky top-0 z-50 flex p-8 bg-base-100">
+    <header className="fixed top-0 z-50 flex w-full p-8 bg-base-100">
       <div className="flex-1">
         <Link
           to={"/"}
