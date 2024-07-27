@@ -15,5 +15,6 @@
 @layer base {
   html {
     @apply font-base;
+    @apply text-base-content;
   }
 }

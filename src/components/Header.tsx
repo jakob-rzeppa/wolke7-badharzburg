@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Navigation from "./Navigation";
 
 const links = [
   {
@@ -21,32 +22,16 @@ const links = [
 
 function Header() {
   return (
-    <header className="fixed top-0 z-50 flex w-full p-8 bg-base-100">
-      <div className="flex-1">
+    <header className="fixed top-0 z-50 flex w-full p-8 align-middle bg-base-100">
+      <div className="flex-1 mt-2">
         <Link
           to={"/"}
           className="text-xl btn btn-ghost text-primary font-accent"
         >
-          Wolke7 Bad Harzburg
+          Wolke7 <span className="hidden lg:inline">Bad Harzburg</span>
         </Link>
       </div>
-      <nav className="flex-none">
-        <ul className="flex gap-4">
-          {links.map((link, index) => (
-            <li key={index}>
-              <Link to={link.path}>{link.name}</Link>
-            </li>
-          ))}
-          <li>
-            <Link
-              to={"/booking"}
-              className="p-4 rounded-lg bg-primary text-primary-content hover:brightness-90 font-accent"
-            >
-              Get in touch
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <Navigation links={links} />
     </header>
   );
 }
