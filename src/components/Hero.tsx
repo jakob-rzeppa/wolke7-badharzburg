@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Hero() {
   return (
     <section className="relative h-screen">
@@ -20,9 +22,12 @@ function Hero() {
         <h2 className="text-xl md:text-[2vw] lg:text-xl">
           to our modern holiday apartment “Wolke7” located in Bad Harzburg.
         </h2>
-        <button className="p-4 mx-auto rounded-lg bg-primary text-primary-content hover:brightness-90 font-accent w-max">
+        <Link
+          to={"/booking"}
+          className="p-4 mx-auto rounded-lg bg-primary text-primary-content hover:brightness-90 font-accent w-max"
+        >
           Get in touch
-        </button>
+        </Link>
       </div>
     </section>
   );

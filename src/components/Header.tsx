@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 const links = [
   {
     path: "",
-    name: "homepage",
+    name: "Homepage",
   },
   {
     path: "/gallery",
