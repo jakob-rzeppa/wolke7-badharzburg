@@ -1,5 +1,7 @@
+import Equipment from "../components/Equipment";
+
 function Information() {
-  return <div>Information</div>;
+  return <Equipment />;
 }
 
 export default Information;
