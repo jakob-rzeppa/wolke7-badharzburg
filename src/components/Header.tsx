@@ -21,7 +21,7 @@ const links = [
 
 function Header() {
   return (
-    <div className="flex p-8 bg-base-100">
+    <header className="sticky top-0 flex p-8 bg-base-100">
       <div className="flex-1">
         <Link
           to={"/"}
@@ -30,7 +30,7 @@ function Header() {
           Wolke7 Bad Harzburg
         </Link>
       </div>
-      <div className="flex-none">
+      <nav className="flex-none">
         <ul className="flex gap-4">
           {links.map((link, index) => (
             <li key={index}>
@@ -46,8 +46,8 @@ function Header() {
             </Link>
           </li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }
 
