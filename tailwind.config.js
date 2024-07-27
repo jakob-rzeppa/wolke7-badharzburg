@@ -27,6 +27,9 @@ export default {
         base: ["Poppins", "sans-serif"],
         accent: ["Playwrite", "sans-serif"],
       },
+      backgroundImage: {
+        hero: "url('/pictures/Wohnzimmer/Sofa_Fenster.jpg')",
+      },
     },
   },
 };

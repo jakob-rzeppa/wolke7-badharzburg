@@ -40,7 +40,7 @@ function Header() {
           <li>
             <Link
               to={"/booking"}
-              className="p-4 rounded-lg bg-primary text-primary-content hover:brightness-90"
+              className="p-4 rounded-lg bg-primary text-primary-content hover:brightness-90 font-accent"
             >
               Get in touch
             </Link>
