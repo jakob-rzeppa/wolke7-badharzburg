@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section className="h-[80vh] relative">
+    <section className="relative h-screen">
       <div className="absolute grid w-full h-full grid-cols-2">
         <img
           src="/pictures/Wohnzimmer/Sofa_Fenster.jpg"
