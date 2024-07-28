@@ -42,8 +42,20 @@ function Header() {
       </div>
       <Navbar.Collapse>
         {links.map((link, index) => (
-          <Navbar.Link key={index}>
-            <Link to={link.path}>{link.name}</Link>
+          <Navbar.Link
+            key={index}
+            as={({
+              href,
+              className,
+              children,
+            }: React.LinkHTMLAttributes<HTMLLinkElement>) => (
+              <Link to={href!} className={className}>
+                {children}
+              </Link>
+            )}
+            href={link.path}
+          >
+            {link.name}
           </Navbar.Link>
         ))}
       </Navbar.Collapse>
