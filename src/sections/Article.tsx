@@ -15,7 +15,7 @@ function Article({ title, content, link, className, ...props }: Props) {
   return (
     <article
       className={classNames(
-        "text-center flex flex-col gap-4 md:w-2/3 mx-auto",
+        "text-center flex flex-col gap-4 md:w-2/3 md:mx-auto mx-12",
         className
       )}
       {...props}
