@@ -37,6 +37,15 @@ function Information() {
           side: "right",
         }}
       />
+      <Article
+        title="Common areas"
+        content="The property offers free private parking and is fully fenced. It also includes a terrace with garden furniture and a table grill."
+        img={{
+          src: "/pictures/Terrasse/Terrassentuer.jpg",
+          alt: "terrace",
+          side: "left",
+        }}
+      />
     </div>
   );
 }
