@@ -1,6 +1,6 @@
 import { Carousel } from "flowbite-react";
 
-function Gallery() {
+function GalleryPage() {
   return (
     <div className="w-screen h-screen">
       <Carousel slideInterval={3000} className="w-2/3 m-auto h-2/3">
@@ -34,4 +34,4 @@ function Gallery() {
   );
 }
 
-export default Gallery;
+export default GalleryPage;

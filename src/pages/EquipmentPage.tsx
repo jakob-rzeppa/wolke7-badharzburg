@@ -1,6 +1,6 @@
 import ArticleOneImage from "../sections/ArticleOneImage";
 
-function Equipment() {
+function EquipmentPage() {
   return (
     <div>
       <ArticleOneImage
@@ -50,4 +50,4 @@ function Equipment() {
   );
 }
 
-export default Equipment;
+export default EquipmentPage;

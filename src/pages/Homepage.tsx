@@ -3,7 +3,7 @@ import Article from "../sections/Article";
 import CallToAction from "../sections/CallToAction";
 import Map from "../sections/Map";
 
-function Homepage() {
+function HomePage() {
   return (
     <>
       <Hero />
@@ -27,4 +27,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default HomePage;
