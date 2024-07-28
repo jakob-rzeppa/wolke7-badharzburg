@@ -7,7 +7,6 @@ function Information() {
         title="General equipment"
         content="The apartment has a modern heater, free WiFi, and is non-smoking."
         img={{ src: "/pictures/Tuer/Tuer.jpg", alt: "door", side: "left" }}
-        className="bg-base-200"
       />
       <ArticleOneImage
         title="Livingroom and bedroom"
@@ -17,6 +16,7 @@ function Information() {
           alt: "tv",
           side: "right",
         }}
+        className="bg-base-200"
       />
       <ArticleOneImage
         title="Kitchen"
@@ -26,7 +26,6 @@ function Information() {
           alt: "kitchen",
           side: "left",
         }}
-        className="bg-base-200"
       />
       <ArticleOneImage
         title="Bathroom"
@@ -36,6 +35,7 @@ function Information() {
           alt: "shower",
           side: "right",
         }}
+        className="bg-base-200"
       />
       <ArticleOneImage
         title="Common areas"
