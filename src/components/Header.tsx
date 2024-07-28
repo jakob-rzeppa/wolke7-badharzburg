@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Navbar } from "flowbite-react";
+import ActionLink from "./ActionLink";
 
 const links = [
   {
@@ -33,12 +34,7 @@ function Header() {
       </Navbar.Brand>
       <div className="flex gap-4 md:order-2">
         <Navbar.Toggle />
-        <Link
-          to={"/booking"}
-          className="p-4 rounded-lg bg-primary text-primary-content hover:brightness-90 font-accent"
-        >
-          Get in touch
-        </Link>
+        <ActionLink to="/booking">Get in touch</ActionLink>
       </div>
       <Navbar.Collapse>
         {links.map((link, index) => (

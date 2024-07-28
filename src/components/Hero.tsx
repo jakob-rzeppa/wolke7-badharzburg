@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ActionLink from "./ActionLink";
 
 function Hero() {
   return (
@@ -22,12 +23,9 @@ function Hero() {
         <h2 className="text-xl md:text-[2vw] lg:text-xl">
           to our modern holiday apartment “Wolke7” located in Bad Harzburg.
         </h2>
-        <Link
-          to={"/booking"}
-          className="p-4 mx-auto rounded-lg bg-primary text-primary-content hover:brightness-90 font-accent w-max"
-        >
+        <ActionLink to={"/booking"} className="mx-auto w-max">
           Get in touch
-        </Link>
+        </ActionLink>
       </div>
     </section>
   );
