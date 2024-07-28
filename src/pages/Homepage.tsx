@@ -21,7 +21,7 @@ function HomePage() {
       />
       <CallToAction
         text="Have the best vacation of your life!"
-        link={{ href: "/pricing", name: "See our prices" }}
+        link={{ href: "/booking", name: "See our prices" }}
       />
     </>
   );
