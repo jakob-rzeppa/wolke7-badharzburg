@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Loading from "./components/Loading";
 import Pricing from "./pages/Pricing";
+import Footer from "./components/Footer";
 
 const Homepage = lazy(() => import("./pages/Homepage"));
 const Booking = lazy(() => import("./pages/Booking"));
@@ -54,6 +55,7 @@ function App() {
           />
         ))}
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

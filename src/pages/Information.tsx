@@ -1,7 +1,5 @@
-import Map from "../sections/Map";
-
 function Information() {
-  return <Map />;
+  return <div>Information</div>;
 }
 
 export default Information;
