@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import ActionLink from "./ActionLink";
 
 function Hero() {
