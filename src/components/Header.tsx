@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Navigation from "./Navigation";
+import { Navbar } from "flowbite-react";
 
 const links = [
   {
@@ -22,17 +22,32 @@ const links = [
 
 function Header() {
   return (
-    <header className="sticky top-0 z-50 flex w-full p-8 align-middle bg-base-100">
-      <div className="flex-1 mt-2">
+    <Navbar fluid rounded border className="sticky top-0 z-10">
+      <Navbar.Brand>
         <Link
-          to={"/"}
-          className="text-xl btn btn-ghost text-primary font-accent"
+          to={""}
+          className="self-center text-2xl font-semibold text-primary font-accent whitespace-nowrap"
         >
           Wolke7 <span className="hidden lg:inline">Bad Harzburg</span>
         </Link>
+      </Navbar.Brand>
+      <div className="flex gap-4 md:order-2">
+        <Navbar.Toggle />
+        <Link
+          to={"/booking"}
+          className="p-4 rounded-lg bg-primary text-primary-content hover:brightness-90 font-accent"
+        >
+          Get in touch
+        </Link>
       </div>
-      <Navigation links={links} />
-    </header>
+      <Navbar.Collapse>
+        {links.map((link, index) => (
+          <Navbar.Link key={index}>
+            <Link to={link.path}>{link.name}</Link>
+          </Navbar.Link>
+        ))}
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 
