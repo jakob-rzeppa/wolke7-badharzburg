@@ -1,5 +1,6 @@
 import Hero from "../components/Hero";
 import Article from "../sections/Article";
+import CallToAction from "../sections/CallToAction";
 import Map from "../sections/Map";
 
 function Homepage() {
@@ -17,6 +18,10 @@ function Homepage() {
         address="Am Breitenberg 41/3, 38667 Bad Harzburg"
         latitude={51.87879012975221}
         longitude={10.538890025373371}
+      />
+      <CallToAction
+        text="Have the best vacation of your life!"
+        link={{ href: "/pricing", name: "See our prices" }}
       />
     </>
   );
