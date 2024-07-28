@@ -16,12 +16,12 @@ const links = [
     name: "Booking",
   },
   {
-    path: "/pricing",
-    name: "Pricing",
+    path: "/equipment",
+    name: "Equipment",
   },
   {
-    path: "/information",
-    name: "Information",
+    path: "/location",
+    name: "Location",
   },
 ];
 
