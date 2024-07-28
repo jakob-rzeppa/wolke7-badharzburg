@@ -1,7 +1,7 @@
-import Equipment from "../components/Equipment";
+import Map from "../sections/Map";
 
 function Information() {
-  return <Equipment />;
+  return <Map />;
 }
 
 export default Information;

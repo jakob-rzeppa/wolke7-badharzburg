@@ -27,7 +27,7 @@ const links = [
 
 function Header() {
   return (
-    <Navbar fluid rounded border className="sticky top-0 z-10">
+    <Navbar fluid rounded border className="sticky top-0 z-40">
       <Navbar.Brand>
         <Link
           to={""}
