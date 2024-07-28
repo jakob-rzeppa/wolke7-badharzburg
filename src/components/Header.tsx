@@ -28,13 +28,20 @@ const links = [
 function Header() {
   return (
     <Navbar fluid rounded border className="sticky top-0 z-40">
-      <Navbar.Brand>
-        <Link
-          to={""}
-          className="self-center text-2xl font-semibold text-primary font-accent whitespace-nowrap"
-        >
-          Wolke7 <span className="hidden lg:inline">Bad Harzburg</span>
-        </Link>
+      <Navbar.Brand
+        className="self-center text-2xl font-semibold text-primary font-accent whitespace-nowrap"
+        as={({
+          href,
+          className,
+          children,
+        }: React.LinkHTMLAttributes<HTMLLinkElement>) => (
+          <Link to={href!} className={className}>
+            {children}
+          </Link>
+        )}
+        href=""
+      >
+        Wolke7 <span className="hidden lg:inline">Bad Harzburg</span>
       </Navbar.Brand>
       <div className="flex gap-4 md:order-2">
         <Navbar.Toggle />
