@@ -31,14 +31,6 @@ const data = [
     title: "Service",
     infos: ["Cleaning", "Laundry package 20 € per person upon request"],
   },
-  {
-    title: "Activities",
-    infos: ["Golf course", "Hiking", "Biking", "Skiing", "Motorcycling"],
-  },
-  {
-    title: "Location",
-    infos: ["Quiet central location", "Near hiking trails"],
-  },
 ];
 
 function Equipment() {

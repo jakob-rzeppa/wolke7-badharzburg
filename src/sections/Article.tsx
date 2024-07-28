@@ -24,10 +24,10 @@ function Article({ title, content, link, className, ...props }: Props) {
       <p>{content}</p>
       {link && (
         <ActionLink
-          to={"/booking"}
+          to={link.href}
           className="mx-auto w-max bg-secondary text-secondary-content"
         >
-          Check avaliability
+          {link.name}
         </ActionLink>
       )}
     </article>
