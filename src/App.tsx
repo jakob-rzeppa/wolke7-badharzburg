@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
+import Loading from "./components/Loading";
 
 const Homepage = lazy(() => import("./pages/Homepage"));
 const Booking = lazy(() => import("./pages/Booking"));
@@ -41,7 +42,7 @@ function App() {
             key={index}
             path={route.path}
             element={
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<Loading size="xl" />}>
                 {route.element}
               </Suspense>
             }
