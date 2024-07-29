@@ -33,9 +33,9 @@ function Article({
     >
       <div
         className={classNames("md:w-2/3 md:mx-auto mx-12 flex gap-8", {
-          "flex-row-reverse": img && img.side === "left",
-          "flex-row": img && img.side === "right",
-          "flex-col": img && img.side === "down",
+          "flex-col-reverse sm:flex-row-reverse": img.side === "left",
+          "flex-col-reverse sm:flex-row": img.side === "right",
+          "flex-col": img.side === "down",
         })}
       >
         <div className="flex flex-col justify-center flex-1 gap-4 text-center">
@@ -53,7 +53,7 @@ function Article({
         <img
           src={img.src}
           alt={img.alt}
-          className={classNames("w-full rounded-lg flex-1 hidden md:block", {
+          className={classNames("w-full rounded-lg flex-1", {
             "aspect-[16/9]": img.side === "down",
             "aspect-[3/4]": img.side === "left" || img.side === "right",
           })}
