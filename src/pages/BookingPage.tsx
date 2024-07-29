@@ -1,5 +1,11 @@
+import Pricing from "../sections/Pricing";
+
 function BookingPage() {
-  return <div>Booking</div>;
+  return (
+    <>
+      <Pricing />
+    </>
+  );
 }
 
 export default BookingPage;
