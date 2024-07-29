@@ -17,7 +17,7 @@ function Footer() {
               {children}
             </Link>
           )}
-          href="/contact"
+          href="/legal-notice"
         >
           Contact
         </FlowbiteFooter.Link>
