@@ -18,6 +18,7 @@ function HomePage() {
         address="Am Breitenberg 41/3, 38667 Bad Harzburg"
         latitude={51.87879012975221}
         longitude={10.538890025373371}
+        className="bg-base-200"
       />
       <CallToAction
         text="Have the best vacation of your life!"

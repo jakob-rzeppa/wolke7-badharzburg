@@ -20,7 +20,7 @@ function Map({
 }: Props) {
   return (
     <section
-      className={classNames(className, "w-screen bg-base-200 text-center p-8")}
+      className={classNames(className, "w-screen text-center p-8")}
       {...props}
     >
       <h1 className="text-3xl font-accent text-secondary">{title}</h1>

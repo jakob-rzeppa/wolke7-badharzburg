@@ -1,3 +1,4 @@
+import ArticleMultipleImages from "../sections/ArticleMultipleImages";
 import ArticleOneImage from "../sections/ArticleOneImage";
 
 function EquipmentPage() {
@@ -8,6 +9,25 @@ function EquipmentPage() {
         content="The apartment has a modern heater, free WiFi, and is non-smoking."
         img={{ src: "/pictures/Tuer/Tuer.jpg", alt: "door", side: "left" }}
       />
+      <ArticleMultipleImages
+        title="Common areas"
+        content="The property offers free private parking and is fully fenced. It also includes a terrace with garden furniture and a table grill."
+        imgs={[
+          {
+            src: "/pictures/Terrasse/Terrassentuer.jpg",
+            alt: "terrace",
+          },
+          {
+            src: "/pictures/Tuer/Tuer.jpg",
+            alt: "door",
+          },
+          {
+            src: "/pictures/Flur/Flur.jpg",
+            alt: "hallway",
+          },
+        ]}
+        className="bg-base-200"
+      />
       <ArticleOneImage
         title="Livingroom and bedroom"
         content="A double bed, a flat-screen TV, a sofa bed, and a radio are included in the apartment."
@@ -16,7 +36,6 @@ function EquipmentPage() {
           alt: "tv",
           side: "right",
         }}
-        className="bg-base-200"
       />
       <ArticleOneImage
         title="Kitchen"
@@ -26,25 +45,21 @@ function EquipmentPage() {
           alt: "kitchen",
           side: "left",
         }}
-      />
-      <ArticleOneImage
-        title="Bathroom"
-        content="The Bathroom contains a shower, hairdryer and large mirror."
-        img={{
-          src: "/pictures/Bad/Dusche.jpg",
-          alt: "shower",
-          side: "right",
-        }}
         className="bg-base-200"
       />
-      <ArticleOneImage
-        title="Common areas"
-        content="The property offers free private parking and is fully fenced. It also includes a terrace with garden furniture and a table grill."
-        img={{
-          src: "/pictures/Terrasse/Terrassentuer.jpg",
-          alt: "terrace",
-          side: "left",
-        }}
+      <ArticleMultipleImages
+        title="Bathroom"
+        content="The Bathroom contains a shower, hairdryer and large mirror."
+        imgs={[
+          {
+            src: "/pictures/Bad/Dusche.jpg",
+            alt: "shower",
+          },
+          {
+            src: "/pictures/Bad/Zahnbuerste.jpg",
+            alt: "shelf",
+          },
+        ]}
       />
     </div>
   );
