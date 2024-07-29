@@ -44,7 +44,7 @@ function ArticleMultipleImages({
           )}
         </div>
         <div
-          className={classNames("flex flex-row", {
+          className={classNames("flex-row hidden md:flex", {
             "gap-32 px-32": imgs.length === 2,
             "gap-16 px-16": imgs.length === 3,
             "gap-8 px-8": imgs.length > 3,
@@ -55,7 +55,7 @@ function ArticleMultipleImages({
               key={index}
               src={img.src}
               alt={img.alt}
-              className="hidden w-full rounded-lg md:block aspect-[3/4]"
+              className="w-full rounded-lg aspect-[3/4]"
             />
           ))}
         </div>

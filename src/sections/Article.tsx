@@ -25,7 +25,7 @@ function Article({
       className={classNames(
         className,
         background,
-        "w-full py-16 md:w-2/3 md:mx-auto mx-12"
+        "py-16 md:w-2/3 md:mx-auto mx-4"
       )}
       {...props}
     >
