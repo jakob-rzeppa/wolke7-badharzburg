@@ -13,6 +13,7 @@ interface Props extends React.AllHTMLAttributes<HTMLDivElement> {
     src: string;
     alt: string;
   }[];
+  background?: "bg-base-100" | "bg-base-200";
 }
 
 function ArticleMultipleImages({
@@ -20,11 +21,15 @@ function ArticleMultipleImages({
   content,
   link,
   className,
+  background,
   imgs,
   ...props
 }: Props) {
   return (
-    <article className={classNames(className, "w-full py-16")} {...props}>
+    <article
+      className={classNames(className, background, "w-full py-16")}
+      {...props}
+    >
       <div className="flex flex-col gap-8 mx-12 md:w-2/3 md:mx-auto">
         <div className="flex flex-col justify-center flex-1 gap-4 text-center">
           <h1 className="text-4xl text-tertiary font-accent">{title}</h1>

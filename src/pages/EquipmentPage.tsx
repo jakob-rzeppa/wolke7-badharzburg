@@ -26,7 +26,7 @@ function EquipmentPage() {
             alt: "hallway",
           },
         ]}
-        className="bg-base-200"
+        background="bg-base-200"
       />
       <ArticleOneImage
         title="Livingroom and bedroom"
@@ -45,7 +45,7 @@ function EquipmentPage() {
           alt: "kitchen",
           side: "left",
         }}
-        className="bg-base-200"
+        background="bg-base-200"
       />
       <ArticleMultipleImages
         title="Bathroom"

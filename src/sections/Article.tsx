@@ -9,13 +9,22 @@ interface Props extends React.AllHTMLAttributes<HTMLDivElement> {
     name: string;
   };
   className?: string;
+  background?: "bg-base-100" | "bg-base-200";
 }
 
-function Article({ title, content, link, className, ...props }: Props) {
+function Article({
+  title,
+  content,
+  link,
+  background,
+  className,
+  ...props
+}: Props) {
   return (
     <article
       className={classNames(
         className,
+        background,
         "w-full py-16 md:w-2/3 md:mx-auto mx-12"
       )}
       {...props}

@@ -7,6 +7,7 @@ interface Props extends React.AllHTMLAttributes<HTMLDivElement> {
   address: string;
   latitude: number;
   longitude: number;
+  background?: "bg-base-100" | "bg-base-200";
 }
 
 function Map({
@@ -16,11 +17,12 @@ function Map({
   latitude,
   longitude,
   className,
+  background,
   ...props
 }: Props) {
   return (
     <section
-      className={classNames(className, "w-screen text-center p-8")}
+      className={classNames(className, background, "w-screen text-center p-8")}
       {...props}
     >
       <h1 className="text-3xl font-accent text-secondary">{title}</h1>
@@ -30,7 +32,12 @@ function Map({
           <div className="w-full border-b border-primary"></div>
         </div>
         <div className="relative flex justify-center">
-          <span className="px-4 text-sm bg-base-200 text-primary">
+          <span
+            className={classNames(
+              background ? background : "bg-base-100",
+              "px-4 text-sm text-primary"
+            )}
+          >
             {address}
           </span>
         </div>
