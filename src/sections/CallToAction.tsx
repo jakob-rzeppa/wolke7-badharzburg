@@ -14,7 +14,7 @@ function CallToAction({ text, link, className, ...props }: Props) {
     <section
       className={classNames(
         className,
-        "flex flex-col gap-4 bg-secondary text-secondary-content text-center m-16 p-16 rounded-lg"
+        "flex flex-col gap-4 bg-secondary text-secondary-content text-center m-16 p-4 md:p-16 rounded-lg"
       )}
       {...props}
     >
