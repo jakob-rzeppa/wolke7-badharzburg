@@ -1,13 +1,13 @@
 import classNames from "classnames";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import Section, { SectionProps } from "../components/Section";
 
-interface Props extends React.AllHTMLAttributes<HTMLDivElement> {
+interface Props extends SectionProps {
   title: string;
   content: string;
   address: string;
   latitude: number;
   longitude: number;
-  background?: "bg-base-100" | "bg-base-200";
 }
 
 function Map({
@@ -18,12 +18,11 @@ function Map({
   longitude,
   className,
   background,
-  ...props
 }: Props) {
   return (
-    <section
-      className={classNames(className, background, "w-screen text-center p-8")}
-      {...props}
+    <Section
+      background={background}
+      className={classNames(className, "px-16 text-center")}
     >
       <h1 className="text-3xl font-accent text-secondary">{title}</h1>
       <p className="mt-4">{content}</p>
@@ -56,7 +55,7 @@ function Map({
           <Popup>{address}</Popup>
         </Marker>
       </MapContainer>
-    </section>
+    </Section>
   );
 }
 

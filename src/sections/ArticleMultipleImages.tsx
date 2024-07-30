@@ -1,19 +1,18 @@
 import classNames from "classnames";
 import ActionLink from "../components/ActionLink";
+import Section, { SectionProps } from "../components/Section";
 
-interface Props extends React.AllHTMLAttributes<HTMLDivElement> {
+interface Props extends SectionProps {
   title: string;
   content: string;
   link?: {
     href: string;
     name: string;
   };
-  className?: string;
   imgs: {
     src: string;
     alt: string;
   }[];
-  background?: "bg-base-100" | "bg-base-200";
 }
 
 function ArticleMultipleImages({
@@ -23,13 +22,9 @@ function ArticleMultipleImages({
   className,
   background,
   imgs,
-  ...props
 }: Props) {
   return (
-    <article
-      className={classNames(className, background, "w-full py-16")}
-      {...props}
-    >
+    <Section background={background} className={className}>
       <div className="flex flex-col gap-8 mx-12 md:w-2/3 md:mx-auto">
         <div className="flex flex-col justify-center flex-1 gap-4 text-center">
           <h1 className="text-4xl text-tertiary font-accent">{title}</h1>
@@ -60,7 +55,7 @@ function ArticleMultipleImages({
           ))}
         </div>
       </div>
-    </article>
+    </Section>
   );
 }
 

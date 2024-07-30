@@ -1,36 +1,24 @@
 import classNames from "classnames";
 import ActionLink from "../components/ActionLink";
+import Section, { SectionProps } from "../components/Section";
 
-interface Props extends React.AllHTMLAttributes<HTMLDivElement> {
+interface Props extends SectionProps {
   title: string;
   content: string;
   link?: {
     href: string;
     name: string;
   };
-  className?: string;
   img: {
     src: string;
     alt: string;
     side: "left" | "right" | "down";
   };
-  background?: "bg-base-100" | "bg-base-200";
 }
 
-function Article({
-  title,
-  content,
-  link,
-  className,
-  background,
-  img,
-  ...props
-}: Props) {
+function Article({ title, content, link, className, background, img }: Props) {
   return (
-    <article
-      className={classNames(className, background, "w-full py-16")}
-      {...props}
-    >
+    <Section background={background} className={className}>
       <div
         className={classNames("md:w-2/3 md:mx-auto mx-12 flex gap-8", {
           "flex-col-reverse sm:flex-row-reverse": img.side === "left",
@@ -59,7 +47,7 @@ function Article({
           })}
         />
       </div>
-    </article>
+    </Section>
   );
 }
 
