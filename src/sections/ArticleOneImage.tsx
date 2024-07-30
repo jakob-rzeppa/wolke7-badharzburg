@@ -54,8 +54,8 @@ function Article({
           src={img.src}
           alt={img.alt}
           className={classNames("w-full rounded-lg flex-1", {
-            "aspect-[16/9]": img.side === "down",
-            "aspect-[3/4]": img.side === "left" || img.side === "right",
+            "aspect-16/9": img.side === "down",
+            "aspect-3/4": img.side === "left" || img.side === "right",
           })}
         />
       </div>

@@ -55,7 +55,7 @@ function ArticleMultipleImages({
               key={index}
               src={img.src}
               alt={img.alt}
-              className="w-full rounded-lg aspect-[3/4]"
+              className="w-full rounded-lg aspect-3/4"
             />
           ))}
         </div>

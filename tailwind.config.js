@@ -33,6 +33,12 @@ export default {
       backgroundImage: {
         hero: "url('/pictures/Wohnzimmer/Sofa_Fenster.jpg')",
       },
+      aspectRatio: {
+        "16/9": "16/9",
+        "9/16": "9/16",
+        "4/3": "4/3",
+        "3/4": "3/4",
+      },
     },
   },
   plugins: [flowbite.plugin()],
