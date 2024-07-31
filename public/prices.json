@@ -1,0 +1,86 @@
+{
+  "start_date": "2024-05-13",
+  "end_date": "2025-05-10",
+  "prices": [
+    {
+      "season": "Nebensaison",
+      "start_date": "2024-05-13",
+      "price_per_night": 89
+    },
+    {
+      "season": "Pfingsten",
+      "start_date": "2024-05-18",
+      "price_per_night": 109
+    },
+    {
+      "season": "Nebensaison",
+      "start_date": "2024-05-27",
+      "price_per_night": 89
+    },
+    {
+      "season": "Sommerferien",
+      "start_date": "2024-06-22",
+      "price_per_night": 109
+    },
+    {
+      "season": "Nebensaison",
+      "start_date": "2024-08-05",
+      "price_per_night": 89
+    },
+    {
+      "season": "Herbstferien",
+      "start_date": "2024-10-01",
+      "price_per_night": 109
+    },
+    {
+      "season": "Nebensaison",
+      "start_date": "2024-10-21",
+      "price_per_night": 89
+    },
+    {
+      "season": "Weihnachtsferien",
+      "start_date": "2024-12-21",
+      "price_per_night": 109
+    },
+    {
+      "season": "Weihnachtsferien",
+      "start_date": "2024-12-28",
+      "price_per_night": 119
+    },
+    {
+      "season": "Nebensaison",
+      "start_date": "2025-01-07",
+      "price_per_night": 89
+    },
+    {
+      "season": "Zeugnisferien",
+      "start_date": "2025-02-01",
+      "price_per_night": 109
+    },
+    {
+      "season": "Nebensaison",
+      "start_date": "2025-02-05",
+      "price_per_night": 89
+    },
+    {
+      "season": "Osterferien",
+      "start_date": "2025-03-16",
+      "price_per_night": 109
+    },
+    {
+      "season": "Nebensaison",
+      "start_date": "2025-04-01",
+      "price_per_night": 89
+    },
+    {
+      "season": "1. Mai",
+      "start_date": "2025-04-27",
+      "price_per_night": 119
+    },
+    {
+      "season": "Nebensaison",
+      "start_date": "2025-05-06",
+      "price_per_night": 89
+    }
+  ]
+}
