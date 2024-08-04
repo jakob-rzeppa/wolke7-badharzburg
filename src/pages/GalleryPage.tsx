@@ -1,6 +1,4 @@
-import InformationWithImages, {
-  InformationWithImagesProps,
-} from "../sections/InformationWithImages";
+import InformationWithImages from "../sections/InformationWithImages";
 
 function GalleryPage() {
   const rooms = [
