@@ -1,7 +1,9 @@
 import classNames from "classnames";
 import { Link, LinkProps } from "react-router-dom";
 
-function ActionLink({ children, className, to, ...props }: LinkProps) {
+export interface ActionLinkProps extends LinkProps {}
+
+function ActionLink({ children, className, to, ...props }: ActionLinkProps) {
   return (
     <Link
       to={to}
