@@ -1,11 +1,5 @@
-import Gallery from "../sections/Gallery";
-
 function GalleryPage() {
-  return (
-    <>
-      <Gallery />
-    </>
-  );
+  return <></>;
 }
 
 export default GalleryPage;
