@@ -16,7 +16,14 @@ interface Props extends SectionProps {
   };
 }
 
-function Article({ title, content, link, className, background, img }: Props) {
+function ArticleOneImage({
+  title,
+  content,
+  link,
+  className,
+  background,
+  img,
+}: Props) {
   return (
     <Section background={background} className={className}>
       <div
@@ -31,7 +38,7 @@ function Article({ title, content, link, className, background, img }: Props) {
           <p>{content}</p>
           {link && (
             <ActionLink
-              to={link.href}
+              href={link.href}
               className="mx-auto w-max bg-secondary text-secondary-content"
             >
               {link.name}
@@ -51,4 +58,4 @@ function Article({ title, content, link, className, background, img }: Props) {
   );
 }
 
-export default Article;
+export default ArticleOneImage;

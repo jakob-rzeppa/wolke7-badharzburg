@@ -22,7 +22,7 @@ function Hero() {
         <h2 className="text-xl md:text-[2vw] lg:text-xl">
           to our modern holiday apartment “Wolke7” located in Bad Harzburg.
         </h2>
-        <ActionLink to={"/booking"} className="mx-auto w-max">
+        <ActionLink href={"/booking"} className="mx-auto w-max">
           Get in touch
         </ActionLink>
       </div>

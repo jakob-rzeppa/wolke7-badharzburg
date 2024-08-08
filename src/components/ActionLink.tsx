@@ -1,12 +1,10 @@
 import classNames from "classnames";
-import { Link, LinkProps } from "react-router-dom";
+import { AProps } from "react-html-props";
 
-export interface ActionLinkProps extends LinkProps {}
-
-function ActionLink({ children, className, to, ...props }: ActionLinkProps) {
+function ActionLink({ children, className, href, ...props }: AProps) {
   return (
-    <Link
-      to={to}
+    <a
+      href={href}
       className={classNames(
         className,
         "p-4 rounded-lg bg-primary text-primary-content hover:brightness-90 font-accent"
@@ -14,7 +12,7 @@ function ActionLink({ children, className, to, ...props }: ActionLinkProps) {
       {...props}
     >
       {children}
-    </Link>
+    </a>
   );
 }
 

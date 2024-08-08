@@ -1,11 +1,12 @@
-import ActionLink, { ActionLinkProps } from "../components/ActionLink";
+import { AProps } from "react-html-props";
+import ActionLink from "../components/ActionLink";
 import Section, { SectionProps } from "../components/Section";
 
 export interface InformationWithImagesProps extends SectionProps {
   information: {
     title: string;
     description: string;
-    actionLink?: ActionLinkProps;
+    actionLink?: AProps;
     image: string;
   }[];
 }
